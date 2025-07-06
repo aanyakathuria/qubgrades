@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QubGrades – Verifiable Report Card</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="loader" id="loader"></div>
+
+  <div class="container">
+    <h1>QubGrades – Verifiable Report Card</h1>
+
+    <!-- 📄 Report Form -->
+    <form id="reportForm">
+      <input type="text" placeholder="Student Name" id="studentName" required>
+      <input type="text" placeholder="Roll Number" id="rollNumber" required>
+      <input type="text" placeholder="School Name" id="schoolName" required>
+
+      <label for="logoUpload">Upload Institution Logo:</label>
+      <input type="file" id="logoUpload" accept="image/*" />
+
+      <textarea id="marksInput" placeholder="Enter marks like: Math: 89, Science: 92" required></textarea>
+      <button type="submit">Generate Report</button>
+    </form>
+
+    <!-- 🧾 Report Card Preview -->
+    <div id="reportCard" class="report-card">
+      <img id="schoolLogo" src="assets/default-logo.png" alt="School Logo"/>
+      <h2 id="studentNameDisplay"></h2>
+      <p id="rollNumberDisplay"></p>
+      <p id="schoolNameDisplay"></p>
+      <ul id="marksDisplay"></ul>
+      <p id="aiSummary"></p>
+
+      <div id="qrCode"></div>
+      <p><strong>Report ID:</strong> <span id="reportIDDisplay"></span></p>
+    </div>
+
+    <!-- 🛠️ Edit + Download -->
+    <div class="buttons">
+      <button onclick="editReport()">Edit Report</button>
+      <button onclick="downloadPDF()">Download PDF</button>
+      <button onclick="downloadImage()">Download Image</button>
+    </div>
+
+    <!-- 🔍 Verify Section -->
+    <div class="section">
+      <h2>Verify Report</h2>
+      <input type="text" id="verifyInput" placeholder="Enter Report ID">
+      <button onclick="verifyReport()">Verify</button>
+      <p id="verifyResult"></p>
+    </div>
+  </div>
+
+  <!-- 🔗 JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
