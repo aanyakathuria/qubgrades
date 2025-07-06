@@ -64,7 +64,7 @@ Live Demo 👉 **[https://aanyakathuria.github.io/qubgrades](https://aanyakathur
 
 
 <p align="center">
-  <img src="assets/sample-preview.png" alt="QubGrades Preview" width="600"/>
+  <img src="assets/sample-preview.jpeg" alt="QubGrades Preview" width="600"/>
 </p>
 ---
 
