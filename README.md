@@ -2,7 +2,7 @@
 # QubGrades – Verifiable Report Cards
 QubGrades is a modern, AI-powered report card generator that produces downloadable, verifiable academic reports with QR code and institution logo support. 
 
-![banner](https://raw.githubusercontent.com/aanyakathuria/qubgrades/main/assets/qubgrades-banner.png)
+
 <p align="center">
   <img src="assets/qubgrades-banner.png" alt="QubGrades Banner" width="100%" />
 </p>
@@ -62,7 +62,7 @@ Live Demo 👉 **[https://aanyakathuria.github.io/qubgrades](https://aanyakathur
 
 ## 📷 Preview
 
-![preview](https://raw.githubusercontent.com/aanyakathuria/qubgrades/main/assets/sample-preview.png)
+
 <p align="center">
   <img src="assets/sample-preview.png" alt="QubGrades Preview" width="600"/>
 </p>
