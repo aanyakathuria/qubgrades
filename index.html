@@ -35,22 +35,21 @@
       <p id="aiSummary"></p>
 
       <div id="qrCode"></div>
-      <p><strong>Report ID:</strong> <span id="reportIDDisplay"></span></p>
+      <p id="reportIDDisplay"></p>
     </div>
 
-    <!-- 🛠️ Edit + Download -->
-    <div class="buttons">
-      <button onclick="editReport()">Edit Report</button>
-      <button onclick="downloadPDF()">Download PDF</button>
-      <button onclick="downloadImage()">Download Image</button>
-    </div>
-
-    <!-- 🔍 Verify Section -->
+    <!-- ✅ Verify Report Section -->
     <div class="section">
       <h2>Verify Report</h2>
       <input type="text" id="verifyInput" placeholder="Enter Report ID">
       <button onclick="verifyReport()">Verify</button>
       <p id="verifyResult"></p>
+    </div>
+
+    <!-- 📥 Download Buttons -->
+    <div class="buttons">
+      <button onclick="downloadPDF()">Download PDF</button>
+      <button onclick="downloadImage()">Download Image</button>
     </div>
   </div>
 
