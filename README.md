@@ -4,7 +4,7 @@ QubGrades is a modern, AI-powered report card generator that produces downloadab
 
 
 <p align="center">
-  <img src="assets/qubgrade-banner.png" alt="QubGrades Banner" width="100%" />
+  <img src="assets/qubgrades-banner.png" alt="QubGrades Banner" width="100%" />
 </p>
 
 
